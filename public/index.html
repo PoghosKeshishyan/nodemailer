@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/stylesheets/style.css">
+    <script src="/javascript/script.js" defer></script>
+    <title>Nodemailer & Express</title>
+</head>
+<body>
+    <header>
+        <h1>Nodemailer & Express</h1>
+    </header>
+
+    <form id="emailForm" action="/send-email" method="POST">
+        <label for="from">From</label>
+        <input id="from" type="email" name="from" placeholder="Your email" required>
+
+        <label for="to">To</label>
+        <input id="to" type="email" name="to" placeholder="Recipient email" required>
+
+        <label for="subject">Subject</label>
+        <input id="subject" type="text" name="subject" placeholder="Email subject" required>
+
+        <label for="text">Message</label>
+        <textarea id="text" name="text" rows="5" placeholder="Your message" required></textarea>
+
+        <button type="submit">Send Email</button>
+    </form>
+
+</body>
+</html>
